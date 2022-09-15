@@ -2,22 +2,29 @@
 This repo contains simple and complex Django App that I Implement while learning Django web framework
 
 ## Projects
-1. Hello World
+# HelloWorld App
 This is a simple hello world app in Django.\
 Learned to:
 - Create function based views
 - Use HttpResponse to return http request to client
 
-2. Pages App
-A simple app that has two pages. The `index` and `about.html` pages.\
-Learned how to return these pages using `class based views`.
-> `from django.views.generic import TemplateVew`
-`class HomePageView(TemplateView):`
-    `template_name = 'home.html'`
+```python
+    fun homePageView(requests):
+        return HttpResponse("Hello, World)
+```
 
-Learnt to create simple _test cases_ for the basic app.\
->"Code without tests is broken as designed"~J.Kaplan Moss \
-Used `SimpleTestCase` that lets testing without lookup on the database.\
+# Pages App
+A simple app that has two pages. The `index` and `about.html` pages.
+Learned how to return these pages using `class based views`.
+```python
+    from django.views.generic import TemplateVew
+    class HomePageView(TemplateView):
+        template_name = 'home.html'
+```
+
+Learnt to create simple _test cases_ for the basic app.
+_"Code without tests is broken as designed"~J.Kaplan Moss_ \
+Used `SimpleTestCase` that lets testing without lookup on the database.
 ```python
 from django.test import impleTestCase
 
