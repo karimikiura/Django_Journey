@@ -14,7 +14,7 @@ Learned to:
 ```
 
 # Pages App
-A simple app that has two pages. The `index` and `about.html` pages.
+A simple app that has two pages. The `index` and `about.html` pages.\
 Learned how to return these pages using `class based views`.
 ```python
     from django.views.generic import TemplateVew
@@ -22,7 +22,7 @@ Learned how to return these pages using `class based views`.
         template_name = 'home.html'
 ```
 
-Learnt to create simple _test cases_ for the basic app.
+Learnt to create simple _test cases_ for the basic app.\
 _"Code without tests is broken as designed"~J.Kaplan Moss_ \
 Used `SimpleTestCase` that lets testing without lookup on the database.
 ```python
