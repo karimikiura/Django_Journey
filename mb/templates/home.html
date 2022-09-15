@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <h1>Welcome to the Mighty <span>Message Board</span></h1>
+    <p>Our recent messages on the board are:</p>
+    
+    {% for message in object_list %}
+        <h3><a href="#">Title: {{ message.title }}</a></h3>
+        <ul>
+            
+            {% if message %}
+                <li>{{ message.text|truncatewords:8 }}</li>
+            {% endif %}
+                
+        </ul>
+    {% endfor %}
+        
+
+{% endblock content %}
+    
