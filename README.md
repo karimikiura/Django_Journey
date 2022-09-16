@@ -88,3 +88,16 @@ class HomePageViewTest(TestCase):
         self.assertTemplateUsed(resp, 'home.html')
 ```
 **9/15/2022**
+
+[9/16/2022]
+# Blog App
+A simple blog app that implements `CRUD` operations.\
+### Unit Tests
+> unit-tests create its own database which is empty.\
+`django.test.Client `  dummy Web browser for simulating `GET` and `POST` requests on a URL.\
+## TODO
+[ ] Fix ```javascript 
+            self.assertEqual(response.status_code, 200)
+            AssertionError: 404 != 200```
+        on `def test_post_detail_view(self):` test\
+
