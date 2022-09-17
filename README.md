@@ -96,8 +96,15 @@ A simple blog app that implements `CRUD` operations.\
 > unit-tests create its own database which is empty.\
 `django.test.Client `  dummy Web browser for simulating `GET` and `POST` requests on a URL.\
 ## TODO
-[ ] Fix ```javascript 
-            self.assertEqual(response.status_code, 200)
-            AssertionError: 404 != 200```
-        on `def test_post_detail_view(self):` test\
+[x] Fix 
+```javascript 
+    self.assertEqual(response.status_code, 200)
+    AssertionError: 404 != 200
+```
+    on `def test_post_detail_view(self):` test\
+
+[ ] Use form widgets
+[ ] Use crispy forms
+[ ] Use bootstrap or Tailwind to style
+[ ] Create user dashboard
 
