@@ -5,7 +5,12 @@
 <div class="post-entry">
     <h2>{{ post.title }}</h2>
     <p>{{ post.body }}</p>
+
 </div>
-   
+
+<p><a href="{% url 'post-update' post.pk %}">Edit</a></p>
+<p><a href="{% url 'post-delete' post.pk %}">Delete</a></p>
+
+
 {% endblock content %}
     

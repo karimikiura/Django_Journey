@@ -18,16 +18,19 @@ rel="stylesheet">
 </head>
 <body>
     <header>
-        <ul>
-            <li><a href="{% url 'home' %}">Home</a></li>
-        </ul>
+        <div class="nav-left">
+            <h1><a href="{% url 'home' %}">Journal Blog</a></h1>
+        </div>
+        <div class="nav-right">
+            <a href="{% url 'post-new' %}">New Journal Post</a>
+        </div>
     </header>
 
     
     {% block content %}
-        <section>
+        <!-- <section>
             
-        </section>
+        </section> -->
     {% endblock content %}
         
 </body>

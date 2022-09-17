@@ -1,3 +1,4 @@
+from urllib import response
 from django.contrib.auth import get_user_model 
 from django.test import TestCase, Client
 from django.urls import reverse
@@ -35,9 +36,39 @@ class BlogTest(TestCase):
         self.assertTemplateUsed(response, 'home.html')
 
     def test_post_detail_view(self):
-        response = self.client.get('/post/1/')
+        response = self.client.get('/post/1')
         no_response = self.client.get('/post/20000/')
+        # TODO -> Fix asserion error. SOLVED by removing trailing slash on post id ->'/post/1'
         self.assertEqual(response.status_code, 200)
         self.assertEqual(no_response.status_code, 404)
         self.assertContains(response, 'Expression of Interest')
         self.assertTemplateUsed(response, 'post_detail.html')
+
+    
+    def test_get_absolute_url(self):
+        self.assertEqual(self.post.get_absolute_url(), '/post/1')
+
+    def test_post_create_view(self):
+        response = self.client.post(reverse('post-new'), {
+            'title': 'Absolute URL',
+            'body': "Django absolute url",
+            'author': self.user,
+        })
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, 'Absolute URL')
+        self.assertContains(response, 'Django absolute url')
+
+
+    def test_post_update_view(self):
+        response = self.client.post(reverse('post-update', args='1'),{
+            'title': 'Updated Absolute URL',
+            'body': 'Updated Django absolute url',
+        })
+
+        self.assertEqual(response.status_code, 302)
+
+    def test_post_delete_view(self):
+        response = self.client.get(reverse('post-delete', args='1'))
+        self.assertEqual(response.status_code, 200)
+
+    
