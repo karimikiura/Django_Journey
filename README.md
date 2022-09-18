@@ -103,8 +103,8 @@ A simple blog app that implements `CRUD` operations.\
 ```
     on `def test_post_detail_view(self):` test\
 
-[ ] Use form widgets
-[ ] Use crispy forms
-[ ] Use bootstrap or Tailwind to style
-[ ] Create user dashboard
+[ ] Use form widgets\
+[ ] Use crispy forms\
+[ ] Use bootstrap or Tailwind to style\
+[ ] Create user dashboard\
 
