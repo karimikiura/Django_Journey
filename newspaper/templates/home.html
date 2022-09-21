@@ -3,17 +3,14 @@
 
 {% block title %} Home {% endblock title %}
 
-
 {% block content %}
+    <div class="jumbotron">
+        <h1 class="display-4">TodayNews App</h1>
+        <p class="lead">An indepedent OpEd news site that has no partiality politically or in the industry. You can trust US!</p>
+        <p class="lead">
+            <a href="{% url 'articles' %}" class="btn btn-primary btn-lg">View all Articles</a>
+        </p>
+    </div>
     
-    {% if user.is_authenticated %}
-        Hello {{ user.username }}
-        <p><a href="{% url 'logout' %}">Logout</a></p>
-    {% else %}
-        <p>You are not logged in</p>
-        <a href="{% url 'login' %}">Log In</a> |
-        <a href="{% url 'register' %}">Sign Up</a>
-    {% endif %}
-        
 {% endblock content %}
     
