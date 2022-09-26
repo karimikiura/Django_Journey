@@ -108,3 +108,9 @@ A simple blog app that implements `CRUD` operations.\
 [ ] Use bootstrap or Tailwind to style\
 [ ] Create user dashboard\
 
+
+# News App
+Todo
+- Celery to handle email resets
+- Allauth - To integrate with third parties
+
