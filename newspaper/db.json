@@ -1,0 +1,938 @@
+[
+{
+    "model": "users.customuser",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$laDt8IqhH2DKUhXalRIjsV$mmxtsVUk8as+C347zN+xZ8Oh0J9mLSVnr01QEX+V6Vg=",
+        "last_login": "2022-09-26T05:55:54.484Z",
+        "is_superuser": true,
+        "username": "mike",
+        "first_name": "",
+        "last_name": "",
+        "email": "mike@todaynews.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-09-20T19:38:47.231Z",
+        "age": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.customuser",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$HPAkp8KZQuLQQjedKgaUCo$cc3pm/foqgcCwGBZds4uyQ7yCtVW2587ztjWYY++0ks=",
+        "last_login": "2022-09-26T05:55:27.904Z",
+        "is_superuser": false,
+        "username": "joe",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-09-20T19:39:27.246Z",
+        "age": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.customuser",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$44tqoSgLrVEVLrBowcYXFo$EhaafDpppDEVn4+bNVOV5mnPubO6ux/wvUIg+Qv+sJY=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "eric",
+        "first_name": "Eric",
+        "last_name": "Aliet",
+        "email": "erickaliet@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-09-20T19:39:36Z",
+        "age": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.customuser",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$WTS3n7QcTgq68pGXD2KjW3$0MrWZHaCpTSpYFJ44uE2sWeaLbE311LBEogSgqGZqbs=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "joy",
+        "first_name": "Joy",
+        "last_name": "Weslye",
+        "email": "john@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-09-20T19:40:24Z",
+        "age": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "articles.article",
+    "pk": 1,
+    "fields": {
+        "title": "How to create a physical volume in Linux using LVM - UPDATED",
+        "body": "Logical volume management is still a mystery to some sysadmins. Begin to unravel the mysteries in this first installment of a short series covering LVM.",
+        "created_at": "2022-09-20T19:41:00.392Z",
+        "updated_at": "2022-09-20T19:44:16.267Z",
+        "is_deleted": false,
+        "author": 2
+    }
+},
+{
+    "model": "articles.article",
+    "pk": 3,
+    "fields": {
+        "title": "Why do Django views need an as_view() method?",
+        "body": "This maps URLs to view classes in a fairly obvious way. A view object is just an instance that handles an HTTP request and returns an appropriate response (actually combining both Model and View, for those of you used to thinking in a more orthodox MVC structure).\r\n\r\nThe LoginView.as_view() call is actually calling a static method on the LoginView class, which constructs and returns an instance of LoginView. This is basically the Factory Method pattern.",
+        "created_at": "2022-09-20T19:43:00.801Z",
+        "updated_at": "2022-09-20T19:43:00.801Z",
+        "is_deleted": false,
+        "author": 3
+    }
+},
+{
+    "model": "articles.article",
+    "pk": 4,
+    "fields": {
+        "title": "How To Increase / Extend The Root (/) Partition In Linux Using The fdisk Utility",
+        "body": "NOTE 1: Take a backup of your system if you can. If it a VM on Azure or any other cloud services provider, take the snapshot of the OS disk\r\n\r\nNOTE 2: The reason for the backup is to roll back if anything goes wrong. If your filesystem is healthy, it is very rare for an issue to occur. These steps are the steps I usually take and have used in a production environment before and was successful. So, no worries.\r\n\r\nNOTE 3: When you use the “d” option to delete the partition and use the “n” option afterward, what you are doing is actually creating a partition table and remains in memory and not deleting the whole partition, so no worries.",
+        "created_at": "2022-09-20T20:30:31.659Z",
+        "updated_at": "2022-09-20T20:30:31.659Z",
+        "is_deleted": false,
+        "author": 4
+    }
+},
+{
+    "model": "articles.article",
+    "pk": 6,
+    "fields": {
+        "title": "How To Increase / Extend The Root (/) Partition In Linux Using The fdisk Utility",
+        "body": "NOTE 1: Take a backup of your system if you can. If it a VM on Azure or any other cloud services provider, take the snapshot of the OS disk\r\n\r\nNOTE 2: The reason for the backup is to roll back if anything goes wrong. If your filesystem is healthy, it is very rare for an issue to occur. These steps are the steps I usually take and have used in a production environment before and was successful. So, no worries.\r\n\r\nNOTE 3: When you use the “d” option to delete the partition and use the “n” option afterward, what you are doing is actually creating a partition table and remains in memory and not deleting the whole partition, so no worries.",
+        "created_at": "2022-09-20T20:34:34.885Z",
+        "updated_at": "2022-09-20T20:34:34.885Z",
+        "is_deleted": false,
+        "author": 2
+    }
+},
+{
+    "model": "articles.article",
+    "pk": 8,
+    "fields": {
+        "title": "Dallas High-Back Chair",
+        "body": "High back chair\r\nAdjustable head rest\r\nBreathable mesh back\r\nLumbar support\r\nAdjustable armrest with soft PU armpad\r\nHigh density PU seat cushion\r\nAdvanced swivel-tilt mechanism\r\nPneumatic Seat height Adjustment\r\n5 star spikey nylon base with castors",
+        "created_at": "2022-09-20T20:36:00.472Z",
+        "updated_at": "2022-09-20T20:36:00.472Z",
+        "is_deleted": false,
+        "author": 4
+    }
+},
+{
+    "model": "articles.article",
+    "pk": 9,
+    "fields": {
+        "title": "Height adjustable with Height Range 710-1210mm Load Capacity 70kg with Two button up/down switch. Frame(WHITE)",
+        "body": "Robust and stable construction :Designed for maximum structural integrity, Double steel tubing that ensures stability even at its highest height. Thicker and more durable powder-coated seamless surface resists scratches, water, and stains.",
+        "created_at": "2022-09-20T20:36:46.062Z",
+        "updated_at": "2022-09-21T08:08:39.249Z",
+        "is_deleted": false,
+        "author": 3
+    }
+},
+{
+    "model": "articles.article",
+    "pk": 10,
+    "fields": {
+        "title": "302 Found",
+        "body": "The HyperText Transfer Protocol (HTTP) 302 Found redirect status response code indicates that the resource requested has been temporarily moved to the URL given by the Location header. A browser redirects to this page but search engines don't update their links to the resource (in 'SEO-speak', it is said that the 'link-juice' is not sent to the new URL).",
+        "created_at": "2022-09-20T20:39:59.823Z",
+        "updated_at": "2022-09-20T20:39:59.823Z",
+        "is_deleted": false,
+        "author": 2
+    }
+},
+{
+    "model": "articles.article",
+    "pk": 11,
+    "fields": {
+        "title": "My Favorite Django 🦄 Template Filters",
+        "body": "Timesince\r\nIf you want to show the date-time-field of a django model in human familiar term you can use this filter like this:\r\n{{ field_date|timesince }}\r\nand it will return you the time like 2 days ago format\r\n\r\n2. Linebreaks\r\nIf you want to show the text of a field of a django model as you write in the form (with spaces, and tabs) you could use this filter in template like this:\r\n{{ value|linebreaks }}",
+        "created_at": "2022-09-21T03:19:57.866Z",
+        "updated_at": "2022-09-21T03:19:57.866Z",
+        "is_deleted": false,
+        "author": 2
+    }
+},
+{
+    "model": "articles.comment",
+    "pk": 1,
+    "fields": {
+        "article": 8,
+        "comment": "ONAP Web Based Architecture Navigation Solution",
+        "author": 2,
+        "created_at": "2022-09-21T07:07:53.031Z",
+        "updated_at": "2022-09-21T07:07:53.031Z",
+        "is_read": false,
+        "is_deleted": false
+    }
+},
+{
+    "model": "articles.comment",
+    "pk": 2,
+    "fields": {
+        "article": 9,
+        "comment": "Interesting. What's the price?",
+        "author": 1,
+        "created_at": "2022-09-21T08:08:39.265Z",
+        "updated_at": "2022-09-21T08:08:39.265Z",
+        "is_read": false,
+        "is_deleted": false
+    }
+},
+{
+    "model": "articles.comment",
+    "pk": 3,
+    "fields": {
+        "article": 9,
+        "comment": "Wow. Does it have memory option?",
+        "author": 4,
+        "created_at": "2022-09-21T08:08:39.276Z",
+        "updated_at": "2022-09-21T08:08:39.276Z",
+        "is_read": false,
+        "is_deleted": false
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2022-09-20T19:39:27.465Z",
+        "user": 1,
+        "content_type": 1,
+        "object_id": "2",
+        "object_repr": "joe",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2022-09-20T19:39:36.480Z",
+        "user": 1,
+        "content_type": 1,
+        "object_id": "3",
+        "object_repr": "eric",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2022-09-20T19:40:13.191Z",
+        "user": 1,
+        "content_type": 1,
+        "object_id": "3",
+        "object_repr": "eric",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2022-09-20T19:40:24.712Z",
+        "user": 1,
+        "content_type": 1,
+        "object_id": "4",
+        "object_repr": "joy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2022-09-20T19:40:36.869Z",
+        "user": 1,
+        "content_type": 1,
+        "object_id": "4",
+        "object_repr": "joy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2022-09-20T19:41:00.400Z",
+        "user": 1,
+        "content_type": 2,
+        "object_id": "1",
+        "object_repr": "How to create a physical volume in Linux using LVM",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2022-09-20T19:41:24.274Z",
+        "user": 1,
+        "content_type": 2,
+        "object_id": "2",
+        "object_repr": "How to resize a logical volume with 5 simple LVM commands",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2022-09-20T19:43:00.808Z",
+        "user": 1,
+        "content_type": 2,
+        "object_id": "3",
+        "object_repr": "Why do Django views need an as_view() method?",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2022-09-21T07:07:53.043Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "ONAP Web Based Architecture Na",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2022-09-21T08:08:39.277Z",
+        "user": 1,
+        "content_type": 2,
+        "object_id": "9",
+        "object_repr": "Height adjustable with Height Range 710-1210mm Load Capacity 70kg with Two button up/down switch. Frame(WHITE)",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"comment\", \"object\": \"Interesting. What's the price?\"}}, {\"added\": {\"name\": \"comment\", \"object\": \"Wow. Does it have memory optio\"}}]"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 1,
+        "codename": "add_customuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 1,
+        "codename": "change_customuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 1,
+        "codename": "delete_customuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 1,
+        "codename": "view_customuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add article",
+        "content_type": 2,
+        "codename": "add_article"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change article",
+        "content_type": 2,
+        "codename": "change_article"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete article",
+        "content_type": 2,
+        "codename": "delete_article"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view article",
+        "content_type": 2,
+        "codename": "view_article"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 3,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 3,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 3,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 3,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 4,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 4,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 4,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 4,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 5,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 5,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 5,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 5,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 6,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 6,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 6,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 6,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 7,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 7,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 7,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 7,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add comment",
+        "content_type": 8,
+        "codename": "add_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change comment",
+        "content_type": 8,
+        "codename": "change_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete comment",
+        "content_type": 8,
+        "codename": "delete_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view comment",
+        "content_type": 8,
+        "codename": "view_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add email address",
+        "content_type": 9,
+        "codename": "add_emailaddress"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change email address",
+        "content_type": 9,
+        "codename": "change_emailaddress"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete email address",
+        "content_type": 9,
+        "codename": "delete_emailaddress"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view email address",
+        "content_type": 9,
+        "codename": "view_emailaddress"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add email confirmation",
+        "content_type": 10,
+        "codename": "add_emailconfirmation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change email confirmation",
+        "content_type": 10,
+        "codename": "change_emailconfirmation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete email confirmation",
+        "content_type": 10,
+        "codename": "delete_emailconfirmation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view email confirmation",
+        "content_type": 10,
+        "codename": "view_emailconfirmation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add social account",
+        "content_type": 11,
+        "codename": "add_socialaccount"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change social account",
+        "content_type": 11,
+        "codename": "change_socialaccount"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete social account",
+        "content_type": 11,
+        "codename": "delete_socialaccount"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view social account",
+        "content_type": 11,
+        "codename": "view_socialaccount"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add social application",
+        "content_type": 12,
+        "codename": "add_socialapp"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change social application",
+        "content_type": 12,
+        "codename": "change_socialapp"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete social application",
+        "content_type": 12,
+        "codename": "delete_socialapp"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view social application",
+        "content_type": 12,
+        "codename": "view_socialapp"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add social application token",
+        "content_type": 13,
+        "codename": "add_socialtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change social application token",
+        "content_type": 13,
+        "codename": "change_socialtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete social application token",
+        "content_type": 13,
+        "codename": "delete_socialtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view social application token",
+        "content_type": 13,
+        "codename": "view_socialtoken"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "users",
+        "model": "customuser"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "articles",
+        "model": "article"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "articles",
+        "model": "comment"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "account",
+        "model": "emailaddress"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "account",
+        "model": "emailconfirmation"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "socialaccount",
+        "model": "socialaccount"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "socialaccount",
+        "model": "socialapp"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "socialaccount",
+        "model": "socialtoken"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "sites",
+        "model": "site"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "uqac2got9v4hgzvojs1l63hmx546dne3",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hBnCm1x6b5nIMMMSNVAUtqV8e7apAvd_vfefylP25r91uLiZ1EXBer0uwXiRyw7kDuVW9Vcy7rMQe-KPmjTU5X4vB7u30Gmlr81SojYASJBZxOMKaQE1gEbZgMRXd_TcB7FWRFgGhyKYeRkLVBkIvX-AOcWOHw:1och5u:VGwNB1uYzjSOsguLDijCvG0mtuNK1n1DA4oIazp6_8Y",
+        "expire_date": "2022-10-10T05:55:54.500Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "vwvtd5to1lv5rp7wkbaculicljmrada4",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hBnCm1x6b5nIMMMSNVAUtqV8e7apAvd_vfefylP25r91uLiZ1EXBer0uwXiRyw7kDuVW9Vcy7rMQe-KPmjTU5X4vB7u30Gmlr81SojYASJBZxOMKaQE1gEbZgMRXd_TcB7FWRFgGhyKYeRkLVBkIvX-AOcWOHw:1oasoJ:R3v9WWrTCze8rBvmBWvZH8JmFhBhSgSepgMbC0j2oj0",
+        "expire_date": "2022-10-05T06:02:15.983Z"
+    }
+}

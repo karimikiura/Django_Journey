@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 import os
 from pathlib import Path
+from telnetlib import AUTHENTICATION
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -39,13 +40,23 @@ INSTALLED_APPS = [
     # 3rd-party
     'crispy_forms',
 
-
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'django.contrib.sites',
+
+    # allauth apps
+
+    'allauth', 
+    'allauth.account', 
+    'allauth.socialaccount', 
+    # ... include the providers you want to enable:
+    'allauth.socialaccount.providers.github', 
+    'allauth.socialaccount.providers.google',
 ]
 
 MIDDLEWARE = [
@@ -77,6 +88,24 @@ TEMPLATES = [
         },
     },
 ]
+
+########################BEGIN ALLAUTH CONFIG####################################
+
+AUTHENTICATION_BACKENDS = [
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend', 
+
+    # `allauth` specific authentication methods, such as login by e-mail
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+SITE_ID = 2
+
+ACCOUNT_EMAIL_VERIFICATION = None 
+
+LOGIN_REDIRECT_URL = 'home'
+
+########################END ALLAUTH CONFIG####################################
+
 
 WSGI_APPLICATION = 'newspaper.wsgi.application'
 
@@ -143,6 +172,7 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
 TIME_ZONE = 'Africa/Nairobi'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field

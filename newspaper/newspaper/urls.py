@@ -23,5 +23,8 @@ urlpatterns = [
     path('users/', include('django.contrib.auth.urls')), 
     path('', include('news.urls'), name='home'), 
     path("articles/", include('articles.urls')),
+
+    # allauth
+    path('users/', include("allauth.urls"))
     
     ]
